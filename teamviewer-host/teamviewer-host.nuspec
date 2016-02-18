@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>teamviewer.host</id>
+    <id>teamviewer-host</id>
     <title>TeamViewer Host</title>
     <version>11.0.55321</version>
     <authors>TeamViewer GmbH</authors>
@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>http://www.teamviewer.com/en-us/eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/codingsteff/chocolatey-packages/master/teamviewer.host/teamviewer.host.png</iconUrl>
+    <iconUrl>https://raw.github.com/codingsteff/chocolatey-packages/master/teamviewer-host/teamviewer-host.png</iconUrl>
     <releaseNotes>http://www.teamviewer.com/en-us/download/current-version</releaseNotes>
     <packageSourceUrl>https://github.com/codingsteff/chocolatey-packages</packageSourceUrl>
     <docsUrl>http://www.teamviewer.com/en-us/support/documents</docsUrl>
