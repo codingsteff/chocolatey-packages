@@ -16,6 +16,7 @@
     <iconUrl>https://raw.github.com/codingsteff/Chocolatey-Packages/master/teamviewer.host/teamviewer.host.png</iconUrl>
     <releaseNotes>https://www.teamviewer.com/de/download/currentversion.aspx</releaseNotes>
     <packageSourceUrl>https://github.com/codingsteff/chocolatey-packages</packageSourceUrl>
+    <docsUrl>http://www.teamviewer.com/en-us/support/documents/</docsUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
