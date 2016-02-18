@@ -9,7 +9,7 @@
     <summary>For unattended access: TeamViewer Host</summary>
     <description>TeamViewer Host is running as a system service and is used for 24/7 access to remote computers, including login/logout and remote reboot - optimized for server maintenance or home-office access</description>
     <projectUrl>http://www.teamviewer.com/</projectUrl>
-    <tags>teamviewer teamviewerhost team viewer remote control host server</tags>
+    <tags>teamviewer teamviewerhost team viewer remote control host server admin</tags>
     <copyright></copyright>
     <licenseUrl>http://www.teamviewer.com/en-us/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
