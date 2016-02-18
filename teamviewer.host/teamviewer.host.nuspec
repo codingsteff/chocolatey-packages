@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>teamviewer.host</id>
     <title>TeamViewer Host</title>
-    <version>9.0.24951</version>
+    <version>11.0.55321</version>
     <authors>TeamViewer GmbH</authors>
     <owners>codingsteff</owners>
     <summary>For unattended access: TeamViewer Host</summary>
     <description>TeamViewer Host is running as a system service and is used for 24/7 access to remote computers, including login/logout and remote reboot - optimized for server maintenance or home-office access</description>
     <projectUrl>http://www.teamviewer.com/</projectUrl>
-    <tags>teamviewer team viewer remote control host server</tags>
+    <tags>teamviewer teamviewerhost team viewer remote control host server</tags>
     <copyright></copyright>
-    <licenseUrl>http://www.teamviewer.com/en/company/eula.aspx</licenseUrl>
+    <licenseUrl>http://www.teamviewer.com/en-us/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/codingsteff/Chocolatey-Packages/master/teamviewer.host/teamviewer.host.png</iconUrl>
     <releaseNotes></releaseNotes>
