@@ -17,6 +17,7 @@
     <releaseNotes>http://www.teamviewer.com/en-us/download/current-version</releaseNotes>
     <packageSourceUrl>https://github.com/codingsteff/chocolatey-packages</packageSourceUrl>
     <docsUrl>http://www.teamviewer.com/en-us/support/documents</docsUrl>
+    <mailingListUrl>http://teamviewerforums.com</mailingListUrl> 
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
