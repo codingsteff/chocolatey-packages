@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id></id>
+    <title></title>
+    <version>0.0</version>
+    <authors></authors>
+    <owners>codingsteff</owners>
+    <summary></summary>
+    <description>
+    </description>
+    <projectUrl></projectUrl>
+    <tags></tags>
+    <copyright></copyright>
+    <licenseUrl></licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/codingsteff/chocolatey-packages/master/copyq/icon.png</iconUrl>
+    <releaseNotes></releaseNotes>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>
+    <projectSourceUrl></projectSourceUrl>
+    <packageSourceUrl>https://github.com/codingsteff/chocolatey-packages/tree/master/</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
