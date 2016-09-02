@@ -1,6 +1,8 @@
 # Chocolatey-Packages
 Repository for Chocolatey packages
 
+Thanks to [majkinetor](https://github.com/majkinetor) for his great [Automatic Chocolatey Package Update Powershell Module](https://github.com/majkinetor/au)
+
 ## Create all packages
 `update_all.ps1`
 
