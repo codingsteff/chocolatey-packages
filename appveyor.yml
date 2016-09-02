@@ -3,21 +3,21 @@ image: WMF 5
 
 environment:
   #Github credentials - used to save result to gist and to commit pushed packages to the git repository
-  github_user: majkinetor
+  github_user: codingsteff
   github_pass:
-    secure: MLLwE43J/DaZdfFcWWugSw==
+    secure: aR/96vopxYpHbL9tChgOiw==
 
   #Gmail credentials - for error notifications
-  mail_user: majkinetor@gmail.com
+  mail_user: coding.steff.dev@gmail.com
   mail_pass:
-    secure: h/+9+co89yapWdXBYYXJvPQQvViVRRq1zd2Us0aTSjY=
+    secure: aR/96vopxYpHbL9tChgOiw==
 
   #ID of the gist used to save run results
-  gist_id: 181b18886fdd363158064baf817fa2ff
+  gist_id: 11d4abbe6bb1fcd50426bad5b7ea88de
 
   #Chocolatey API key - to push updated packages
   api_key:
-    secure: Zaby8iZHam4NMZ4AAjH/ZM19D+soKoohnHnRAcusk/HvNkEPMA8Wd3jxUGPnQgPJ
+    secure: CcmSHQ2lL0R5cVlLFCG/vTgXXfGpJV5VbNbS65z9Bvw94XxCrUqLmED+AW/jYLMP
 
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
