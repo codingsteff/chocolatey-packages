@@ -1,3 +1,6 @@
+[![](https://ci.appveyor.com/api/projects/status/r3tg6hf53jli0bid?svg=true)](https://ci.appveyor.com/project/codingsteff/chocolatey-packages)
+[Update status](https://gist.github.com/codingsteff/11d4abbe6bb1fcd50426bad5b7ea88de)
+
 # Chocolatey-Packages
 Repository for Chocolatey packages
 
