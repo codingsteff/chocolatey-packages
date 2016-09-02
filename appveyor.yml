@@ -36,7 +36,7 @@ build_script:
     if ($Env:APPVEYOR_REPO_COMMIT_AUTHOR -eq 'appveyor') {
         "Build triggered by appveyor commit, aborting"
     } else {
-        c:/projects/chocolatey/update_all.ps1
+        c:/projects/chocolatey-packages/update_all.ps1
     }
 
 #on_finish:
