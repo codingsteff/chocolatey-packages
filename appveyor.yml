@@ -6,14 +6,16 @@ environment:
   github_user: codingsteff
   github_pass:
     secure: aR/96vopxYpHbL9tChgOiw==
+  github_api_key:
+    secure: W+Khh+y60tjshEKVg7Cqr4i+SrL2tjxx6VSQZ3tpxD4UPh9+IBO+ro/kDhlKRURW
+
+  #ID of the gist used to save run results
+  github_gist_id: 11d4abbe6bb1fcd50426bad5b7ea88de
 
   #Gmail credentials - for error notifications
   mail_user: coding.steff.dev@gmail.com
   mail_pass:
     secure: aR/96vopxYpHbL9tChgOiw==
-
-  #ID of the gist used to save run results
-  gist_id: 11d4abbe6bb1fcd50426bad5b7ea88de
 
   #Chocolatey API key - to push updated packages
   api_key:
