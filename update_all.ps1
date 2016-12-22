@@ -4,7 +4,7 @@ cd $PSScriptRoot
 ls _user\*.ps1 | % { . $_ }
 if (Test-Path update_vars.ps1) { . ./update_vars.ps1 }
 
-$options = @{
+$options = [ordered]@{
     Timeout = 100
     Push    = $true
     Threads = 10
