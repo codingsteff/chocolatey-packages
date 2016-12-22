@@ -1,7 +1,6 @@
 param($Name = $null)
 cd $PSScriptRoot
 
-ls _user\*.ps1 | % { . $_ }
 if (Test-Path update_vars.ps1) { . ./update_vars.ps1 }
 
 $options = [ordered]@{
