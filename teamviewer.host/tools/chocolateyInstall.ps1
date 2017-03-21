@@ -2,7 +2,7 @@
 
 $packageName = 'teamviewer.host'
 $url32       = 'https://download.teamviewer.com/download/TeamViewer_Host_Setup.exe'
-$checksum32  = '92d79584221e7ad5ffd6820fa9d61e45e4c38eb7693542d471997260119ca0c7'
+$checksum32  = '1ab3204fecd93329008276043b83c84d6b806a3c1e55a701e30295aed27ea1ae'
 
 $toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
