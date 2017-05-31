@@ -29,7 +29,8 @@ $options = [ordered]@{
 
   # Then save run info which can be loaded with Import-CliXML and inspected
   RunInfo = @{
-    Path = "$PSScriptRoot\update_info.xml"
+    Exclude = 'password', 'apikey'
+    Path    = "$PSScriptRoot\update_info.xml"
   }
 
   # Finally, send an email to the user if any error occurs and attach previously created run info
@@ -45,8 +46,7 @@ $options = [ordered]@{
   } 
 }
 
-updateall -Name $Name -Options $options | Format-Table
-$global:updateall = Import-CliXML $PSScriptRoot\update_info.xml
+$global:info = updateall -Name $Name -Options $options
 
 #Uncomment to fail the build on AppVeyor on any package error
-if ($updateall.error_count.total) { throw 'Errors during update' }
+if ($global:info.error_count.total) { throw 'Errors during update' }
