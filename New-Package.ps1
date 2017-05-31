@@ -24,10 +24,10 @@ function New-Package{
     if ($Name -eq $null) { throw "Name can't be empty" }
     if (Test-Path $Name) { throw "Package with that name already exists" }
     if (!(Test-Path _template)) { throw "Template for the packages not found" }
-    cp _template $Name -Recurse
+    Copy-Item _template $Name -Recurse
 
-    $nuspec = gc "$Name\template.nuspec"
-    rm "$Name\template.nuspec"
+    $nuspec = Get-Content "$Name\template.nuspec"
+    Remove-Item "$Name\template.nuspec"
 
     Write-Verbose 'Fixing nuspec'
     $nuspec = $nuspec -replace '<id>.+',               "<id>$Name</id>"
@@ -39,19 +39,19 @@ function New-Package{
     {
         'Installer' {
             Write-Verbose 'Using installer template'
-            rm "$Name\tools\chocolateyInstallZip.ps1"
-            mv "$Name\tools\chocolateyInstallExe.ps1" "$Name\tools\chocolateyInstall.ps1"
+            Remove-Item "$Name\tools\chocolateyInstallZip.ps1"
+            Move-Item "$Name\tools\chocolateyInstallExe.ps1" "$Name\tools\chocolateyInstall.ps1"
         }
         'Portable' {
             Write-Verbose 'Using portable template'
-            rm "$Name\tools\chocolateyInstallExe.ps1"
-            mv "$Name\tools\chocolateyInstallZip.ps1" "$Name\tools\chocolateyInstall.ps1"
+            Remove-Item "$Name\tools\chocolateyInstallExe.ps1"
+            Move-Item "$Name\tools\chocolateyInstallZip.ps1" "$Name\tools\chocolateyInstall.ps1"
         }
     }
 
     Write-Verbose 'Fixing chocolateyInstall.ps1'
-    $installer = gc "$Name\tools\chocolateyInstall.ps1"
-    $installer -replace "(^[$]packageName\s*=\s*)('.*')", "`$1'$($Name)'" | sc "$Name\tools\chocolateyInstall.ps1"
+    $installer = Get-Content "$Name\tools\chocolateyInstall.ps1"
+    $installer -replace "(^[$]packageName\s*=\s*)('.*')", "`$1'$($Name)'" | Set-Content "$Name\tools\chocolateyInstall.ps1"
 }
 
 New-Package $Name $Type -GithubRepository codingsteff/chocolatey-packages -Verbose

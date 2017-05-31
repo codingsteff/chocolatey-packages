@@ -1,5 +1,5 @@
 param($Name = $null)
-cd $PSScriptRoot
+Set-Location $PSScriptRoot
 
 if (Test-Path update_vars.ps1) { . ./update_vars.ps1 }
 
@@ -45,7 +45,7 @@ $options = [ordered]@{
            } 
 }
 
-updateall -Name $Name -Options $options | ft
+updateall -Name $Name -Options $options | Format-Table
 $global:updateall = Import-CliXML $PSScriptRoot\update_info.xml
 
 #Uncomment to fail the build on AppVeyor on any package error
