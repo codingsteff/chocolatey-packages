@@ -6,8 +6,6 @@ $url64       = ''
 $checksum32  = ''
 $checksum64  = ''
 
-$toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
-
 $packageArgs = @{
   packageName            = $packageName
   fileType               = 'EXE'

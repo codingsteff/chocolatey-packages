@@ -4,8 +4,6 @@ $packageName = 'teamviewer.host'
 $url32       = 'https://download.teamviewer.com/download/TeamViewer_Host_Setup.exe'
 $checksum32  = '4f320cefeffd7f17a2fb7aba75d982cdac29dbe11c9e7f5538c0454b1086a93a'
 
-$toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
-
 $packageArgs = @{
   packageName            = $packageName
   fileType               = 'EXE'
