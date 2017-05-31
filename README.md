@@ -16,3 +16,6 @@ Thanks to [majkinetor](https://github.com/majkinetor) for his great [Automatic C
 `choco install teamviewer.host.10.0.*.nupkg  -fdv -s "%cd%"`
 
 `choco uninstall teamviewer.host`
+
+## Template
+[au-packages-template](https://github.com/majkinetor/au-packages-template)
