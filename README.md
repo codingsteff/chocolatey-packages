@@ -13,9 +13,6 @@ My Chocolatey packages
       Get-Module au -ListAvailable | select Name, Version
 
 # Use Cases
-## Update all packages
-    update_all.ps1 (push will execute!)
-
 ## Update single package
     cd PACKAGE
     update.ps1` or `choco pack
@@ -24,6 +21,9 @@ My Chocolatey packages
     cd PACKAGE
     $au_Force = $true
     update.ps1` or `choco pack
+
+## Update all packages
+    update_all.ps1 (push will execute and fail, no api-key!)
 
 # Test
 ## Local Test package
