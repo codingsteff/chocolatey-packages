@@ -2,7 +2,7 @@
 [Update status](https://gist.github.com/codingsteff/11d4abbe6bb1fcd50426bad5b7ea88de)
 
 # Chocolatey-Packages
-Repository for my Chocolatey packages
+My Chocolatey packages
 
 # Prerequisites
 [Automatic Chocolatey Package Update Powershell Module](https://github.com/majkinetor/au)
@@ -13,13 +13,19 @@ Repository for my Chocolatey packages
       Get-Module au -ListAvailable | select Name, Version
 
 # Use Cases
-## Create all packages
+## Update all packages
     update_all.ps1 (push will execute!)
 
-## Create package
+## Update single package
     cd PACKAGE
     update.ps1` or `choco pack
 
+## Force package update
+    cd PACKAGE
+    $au_Force = $true
+    update.ps1` or `choco pack
+
+# Test
 ## Local Test package
     choco install teamviewer.host.*.nupkg  -fdv -s "%cd%"
     choco uninstall teamviewer.host
