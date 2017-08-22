@@ -2,20 +2,27 @@
 [Update status](https://gist.github.com/codingsteff/11d4abbe6bb1fcd50426bad5b7ea88de)
 
 # Chocolatey-Packages
-Repository for Chocolatey packages
+Repository for my Chocolatey packages
 
-Thanks to [majkinetor](https://github.com/majkinetor) for his great [Automatic Chocolatey Package Update Powershell Module](https://github.com/majkinetor/au)
+# Prerequisites
+- [Automatic Chocolatey Package Update Powershell Module](https://github.com/majkinetor/au)
+  - `Install-PackageProvider -Name NuGet -Force`
+  - `Set-PSRepository -Name PSGallery -InstallationPolicy Trusted`
+  - `Install-Module au -Scope CurrentUser`
+  - `Get-Module au -ListAvailable | select Name, Version`
 
+# Use Cases
 ## Create all packages
-`update_all.ps1`
+- `update_all.ps1` (push will execute!)
 
 ## Create package
-`PACKAGE\update.ps1` or `choco pack`
+- `cd PACKAGE`
+- `update.ps1` or `choco pack`
 
 ## Local Test package
-`choco install teamviewer.host.10.0.*.nupkg  -fdv -s "%cd%"`
+- `choco install teamviewer.host.*.nupkg  -fdv -s "%cd%"`
+- `choco uninstall teamviewer.host`
 
-`choco uninstall teamviewer.host`
-
+# Info
 ## Template
-[au-packages-template](https://github.com/majkinetor/au-packages-template)
+- [au-packages-template](https://github.com/majkinetor/au-packages-template)
