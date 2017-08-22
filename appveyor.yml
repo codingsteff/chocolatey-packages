@@ -38,7 +38,6 @@ build_script:
 
 artifacts:
 - path: update_info.xml
-- path: gist.md
 
 notifications:
 - provider: Email
