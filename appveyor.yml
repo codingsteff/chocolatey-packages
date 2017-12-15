@@ -1,4 +1,4 @@
-# set schedule build as Crontab expression: * 22 * * *
+# set schedule build as Crontab expression: 0 22 * * *
 version: '{build}'
 image: WMF 5
 
