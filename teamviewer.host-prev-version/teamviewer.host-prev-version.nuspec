@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>teamviewer.host</id>
+    <title>TeamViewer Host</title>
+    <version>12.0.90922</version>
+    <authors>TeamViewer GmbH</authors>
+    <owners>codingsteff</owners>
+    <summary>For unattended access: TeamViewer Host</summary>
+    <description>
+	TeamViewer Host is running as a system service and is used for 24/7 access to remote computers, including login/logout and remote reboot - optimized for server maintenance or home-office access
+    </description>
+    <projectUrl>http://www.teamviewer.com</projectUrl>
+    <tags>teamviewer teamviewerhost team viewer remote control host server admin</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.teamviewer.com/en-us/eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/codingsteff/chocolatey-packages/master/teamviewer.host/icon.png</iconUrl>
+    <releaseNotes>http://www.teamviewer.com/en-us/download/current-version</releaseNotes>
+    <docsUrl>http://www.teamviewer.com/en-us/support/documents</docsUrl>
+    <mailingListUrl>http://teamviewerforums.com</mailingListUrl> 
+    <packageSourceUrl>https://github.com/codingsteff/chocolatey-packages/tree/master/teamviewer.host-prev-version</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
