@@ -31,7 +31,7 @@ function extractVersion($page) {
   $part = $page.Content.Substring($start+$locater.Length)
   $end = $part.IndexOf("</p>")
   $version = $part.Substring(0, $end)
-  return $version
+  return $version.Replace("v", "")
 }
 
 update -ChecksumFor 32
