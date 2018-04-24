@@ -1,6 +1,9 @@
 param($Name = $null)
 Set-Location $PSScriptRoot
 
+# Workarround: au support TLS 1.2 in the gist plugin (https://github.com/majkinetor/au/issues/142)
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 if (Test-Path update_vars.ps1) { . ./update_vars.ps1 }
 
 $options = [ordered]@{
