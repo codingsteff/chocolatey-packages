@@ -1,9 +1,6 @@
 param($Name = $null)
 Set-Location $PSScriptRoot
 
-# Workarround: au support TLS 1.2 in the gist plugin (https://github.com/majkinetor/au/issues/142)
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-
 if (Test-Path update_vars.ps1) { . ./update_vars.ps1 }
 
 $options = [ordered]@{
@@ -40,14 +37,17 @@ $options = [ordered]@{
   Mail    = if ($Env:mail_user) {
     @{
       To        = $Env:mail_user
-      Server    = 'smtp.gmail.com'
+      Server    = $Env:mail_server
       UserName  = $Env:mail_user
       Password  = $Env:mail_pass
-      Port      = 587
-      EnableSsl = $true
+      Port      = $Env:mail_port
+      EnableSsl = $Env:mail_enablessl -eq 'true'
     }
-  } 
+  }   
 }
+
+# GitHub Api requries TLS 1.2 (https://github.com/majkinetor/au/issues/142)
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $global:info = updateall -Name $Name -Options $options
 
