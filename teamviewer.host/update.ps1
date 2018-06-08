@@ -26,9 +26,9 @@ function global:au_GetLatest {
 }
 
 function extractVersion($page) {
-  $locater = "<p class=""DownloadVersion"">"
+  $locater = "v13."
   $start = $page.Content.IndexOf($locater)
-  $part = $page.Content.Substring($start+$locater.Length)
+  $part = $page.Content.Substring($start)
   $end = $part.IndexOf("</p>")
   $version = $part.Substring(0, $end)
   return $version.Replace("v", "")
