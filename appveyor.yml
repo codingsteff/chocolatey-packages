@@ -8,7 +8,7 @@ environment:
   github_pass:
     secure: aR/96vopxYpHbL9tChgOiw==
   github_api_key:
-    secure: ggaXNMEdEIn7XOgV4MsEDnZ1N0ycdSPte/BUCwFTv/5NRPOTz8Pj1zgP9cRbfBq4
+    secure: ggaXNMEdEIn7XOgV4MsEDnZ1N0ycdSPte/BUCwFTv/5NRPOTz8Pj1zgP9cRbfBq4 # Token: public_repo + gist
 
   #ID of the gist used to save run results
   github_gist_id: 11d4abbe6bb1fcd50426bad5b7ea88de
