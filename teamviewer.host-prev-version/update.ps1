@@ -1,6 +1,6 @@
 import-module au
 
-$url = 'https://download.teamviewer.com/download/version_12x/TeamViewer_Host_Setup.exe'
+$url = 'https://download.teamviewer.com/download/version_13x/TeamViewer_Host_Setup.exe'
 
 function global:au_SearchReplace {
     @{
