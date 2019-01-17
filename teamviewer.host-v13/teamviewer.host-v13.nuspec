@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>teamviewer.host</id>
+    <id>teamviewer.host-v13</id>
     <title>TeamViewer Host</title>
-    <version></version>
+    <version>13.2.26558.0</version>
     <authors>TeamViewer GmbH</authors>
     <owners>codingsteff</owners>
     <summary>For unattended access: TeamViewer Host</summary>
