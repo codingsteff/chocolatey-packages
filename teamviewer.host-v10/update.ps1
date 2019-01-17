@@ -1,6 +1,7 @@
 import-module au
 
 $url = 'https://download.teamviewer.com/download/version_10x/TeamViewer_Host_Setup.exe'
+$packageName = 'teamviewer.host'
 
 function global:au_SearchReplace {
     @{
@@ -15,7 +16,7 @@ function global:au_GetLatest {
     $tmp = New-TemporaryFile
     Invoke-WebRequest -Uri $url -OutFile $tmp
     $version = (Get-Command $tmp).Version
-    return @{ URL32 = $url; Version = $version }
+    return @{ URL32 = $url; Version = $version; PackageName = $packageName }
 }
 
 update -ChecksumFor 32
