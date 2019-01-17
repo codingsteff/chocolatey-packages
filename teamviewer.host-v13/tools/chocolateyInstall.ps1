@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'teamviewer.host'
-$url32       = 'https://download.teamviewer.com/download/version_12x/TeamViewer_Host_Setup.exe'
+$url32       = 'https://download.teamviewer.com/download/version_13x/TeamViewer_Host_Setup.exe'
 $checksum32  = ''
 
 $packageArgs = @{
