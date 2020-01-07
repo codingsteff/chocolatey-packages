@@ -9,23 +9,29 @@ My Chocolatey packages
 
 [Automatic Chocolatey Package Update Powershell Module](https://github.com/majkinetor/au)
 
-      Install-PackageProvider -Name NuGet -Force
-      Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-      Install-Module au -Scope CurrentUser
-      Get-Module au -ListAvailable | select Name, Version
+```ps
+Install-PackageProvider -Name NuGet -Force
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+Install-Module au -Scope CurrentUser
+Get-Module au -ListAvailable | select Name, Version
+```
 
 ## Use Cases
 
 ### Update single package
 
-    cd PACKAGE
-    update.ps1
+```sh
+cd PACKAGE
+update.ps1
+```
 
 ### Force package update
 
-    cd PACKAGE
-    $au_Force = $true
-    update.ps1
+```sh
+cd PACKAGE
+$au_Force = $true
+update.ps1
+```
 
 ### Force push to chocolatey
 
@@ -34,18 +40,24 @@ My Chocolatey packages
 
 ### Update all packages
 
-    update_all.ps1 (push will execute and fail, no api-key!)
+```sh
+update_all.ps1 (push will execute and fail, no api-key!)
+```
 
 ## Test
 
 ### Local Test package
 
-    choco install teamviewer.host.*.nupkg  -fdv -s "%cd%"
-    choco uninstall teamviewer.host
+```sh
+choco install teamviewer.host.*.nupkg  -fdv -s "%cd%"
+choco uninstall teamviewer.host
+```
 
 ### Manual pack
 
-    choco pack
+```ps
+choco pack
+```
 
 ## Info
 
