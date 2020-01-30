@@ -15,7 +15,7 @@
     <copyright></copyright>
     <licenseUrl>http://www.teamviewer.com/en-us/eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/codingsteff/chocolatey-packages/master/teamviewer.host/icon.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/codingsteff/chocolatey-packages/master/teamviewer.host-v15/icon.png</iconUrl>
     <releaseNotes>http://www.teamviewer.com/en-us/download/current-version</releaseNotes>
     <docsUrl>http://www.teamviewer.com/en-us/support/documents</docsUrl>
     <mailingListUrl>http://teamviewerforums.com</mailingListUrl> 
