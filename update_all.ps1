@@ -4,7 +4,7 @@ Set-Location $PSScriptRoot
 if (Test-Path update_vars.ps1) { . ./update_vars.ps1 }
 
 $options = [ordered]@{
-  Timeout = 100
+  Timeout = 200 #  https://push.chocolatey.org Failed to process request. 'Origin Time-out'.  The remote server returned an error: (524) 
   Push    = $true
   Threads = 10
 
