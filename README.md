@@ -59,6 +59,19 @@ choco uninstall teamviewer.host
 choco pack
 ```
 
+## Push
+
+### Manual push
+
+```ps
+# show if apikey is available
+choco apikey
+# set apikey (from chocolatey.org/account)
+choco apikey --key xxx --source https://push.chocolatey.org/
+# push current nupkg
+choco push
+```
+
 ## Info
 
 ### Template
