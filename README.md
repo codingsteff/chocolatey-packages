@@ -35,7 +35,7 @@ update.ps1
 
 ### Force push to chocolatey
 
-- Reset minor+patch version in teamviewer.host.nuspec
+- Reset minor+patch version in teamviewer.host.nuspec to '0.0'
 - Clear $checksum32 in chocolateyInstall.ps1
 
 ### Update all packages
