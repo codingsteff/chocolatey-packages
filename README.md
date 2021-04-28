@@ -22,13 +22,7 @@ Get-Module au -ListAvailable | select Name, Version
 
 ```sh
 cd PACKAGE
-update.ps1
-```
-
-### Force package update
-
-```sh
-cd PACKAGE
+# Force package update (when RemoteVersion is latest)
 $au_Force = $true
 update.ps1
 ```
