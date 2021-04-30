@@ -5,7 +5,8 @@ if (Test-Path update_vars.ps1) { . ./update_vars.ps1 }
 
 $options = [ordered]@{
   Timeout = 200 #  https://push.chocolatey.org Failed to process request. 'Origin Time-out'.  The remote server returned an error: (524) 
-  Push    = $true
+  Force   = $false # Force all packages TODO: try out with $Env:au_Force -eq 'true' ?
+  Push    = $true  # Push to chocolatey
   Threads = 10
 
   # Save text report in the local file report.txt

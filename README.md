@@ -18,7 +18,7 @@ Get-Module au -ListAvailable | select Name, Version
 
 ## Use Cases
 
-### Update single package
+### Update package
 
 ```sh
 cd PACKAGE
@@ -27,19 +27,21 @@ $au_Force = $true
 update.ps1
 ```
 
-### Force push to chocolatey
-
-- Reset minor+patch version in teamviewer.host.nuspec to '0.0'
-- Clear $checksum32 in chocolateyInstall.ps1
-- Not commit empty!
-
 ### Update all packages
 
 ```sh
-update_all.ps1 (push will execute and fail, no api-key!)
+# Force package update (when RemoteVersion is latest)
+# SET Force = $true in file update_all.ps1
+update_all.ps1
 ```
 
 ## Test
+
+### Remove all nupkg files
+
+```sh
+Get-ChildItem -Filter *.nupkg -Recurse | Remove-Item
+```
 
 ### Local Test package
 
