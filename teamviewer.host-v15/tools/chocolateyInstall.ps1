@@ -2,7 +2,7 @@
 
 $packageName = 'teamviewer.host'
 $url32       = 'https://download.teamviewer.com/download/version_15x/TeamViewer_Host_Setup.exe'
-$checksum32  = 'cbf7f56bd61d01a4b9deabaa191aafd83e513b823e8278e793e07363ea4c251c'
+$checksum32  = '8908a574ddedb489ee0815d1b0f0593282476c616bfb5764aa3778cabd31aa96'
 
 $packageArgs = @{
   packageName            = $packageName
